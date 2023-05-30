@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <style>
+        body{
+            background: #D2E9E9;
+            font-size: 20px;
+            color: #002B5B;
+            align-items: center;
+        }
+        header {
+            padding: 30px;
+            text-align: center;
+            background: #579BB1;
+            color: white;
+            font-size: 30px;
+            
+            }
+        footer{
+            padding: 20px;
+            text-align: center;
+            background: #579BB1;
+            font-size: 10px;
+            margin-top: 200px;
+        }
+    
+        a:link, a:visited {
+      text-decoration: none ;
+      color: #C4DFDF;
+        }
+         
+        #type{
+             background-color: #579BB1;
+             color: #002B5B;
+        }
+
+        #type:after {
+            position: absolute;
+            content: "";
+            top: 14px;
+            right: 10px;
+            width: 0;
+            height: 0;
+            border: 6px solid transparent;
+            border-color: #fff transparent transparent transparent;
+            }
+            button{
+                background-color: #579BB1; 
+                border: none;
+                color: #002B5B;
+                padding: 10px 25px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 20px;
+            }
+            legend{
+                color: #002B5B;
+                font-weight: bold;
+                font-size: 25px;
+            }
+        </style>
+</head>
+<body>
+    <header>
+        <h1><a href="#">Restaurant Form</a> </h1>
+    </header>
+
+    <main>
+        <section>
+            <form id="resForm">
+                <fieldset>
+                    <legend>Restaurant</legend>
+                    <div>
+                        <label for="name">Food Name</label>
+                        <input type="text" name="name" id="name" placeholder="Food Name">
+                    </div>
+                    <br>
+                    <div>
+                        <select name="type" id="type">
+                            <option value="Fruit and vegetables">Fruit and vegetables</option>
+                            <option value="Starchy food">Starchy food</option>
+                            <option value="dairy">Dairy</option>
+                            <option value="protein">Protein</option>
+                            <option value="fat">Fat</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="price">Price</label>
+                        <input type="number" name="price" id="price" placeholder="Price">
+                    </div>
+                    <br>
+                    <button type="submit">save</button>
+                </fieldset>
+            </form>
+        </section>
+        <section id="foodTable">
+            <div>
+                <h4>Food Table </b></h4>
+                 <table id="tableData" style= " border: 1px" cellpadding="2">
+                  <tr>
+                    <td><b>Id</b></td>
+                   <td><b>Name</b></td>
+                   <td><b>Type</b></td>
+                   <td><b>Price</b></td>
+                  </tr>
+                 </table>
+               </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Anfalqa. All Rights Reserved.</p>
+        <a href="tel:+962069999999">+962 06 999 99</a> 
+        <a href="https://www.facebook.com/">Restaurant</a>
+    </footer>
+    <script src="./js/app.js"></script>
+</body>
+</html>
