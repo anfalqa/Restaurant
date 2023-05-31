@@ -34,7 +34,6 @@ resForm.prototype.render = function () {
     let Type = document.getElementById("type");
     let price = document.getElementById("price");
     let food = new resForm(Name, Type, price);
-
     food.render();
   }
   let saveValues = document.getElementById('resForm');
