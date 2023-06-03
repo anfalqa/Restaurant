@@ -26,6 +26,7 @@ let saveValues = document.getElementById('resForm');
     let price = e.target.price.value;
     let food = new resForm(Name, Type, price);
       food.generatingID();
+      window.location.href="./statistics.html"
   storeData();
   }
   
